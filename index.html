@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- SEO Базовые мета-теги -->
+    <title>Ловим, но не пойманы | Магазин охоты и рыбалки в Минске — снаряжение, оружие, рыболовные снасти</title>
+    <meta name="description"
+        content="Магазин охоты и рыбалки в Минске. Оружие, оптика, рыболовные снасти, камуфляж, палатки, кемпинг. Оригинальные бренды. Доставка по Беларуси. Скидки до 25%!">
+    <meta name="keywords"
+        content="магазин охоты минск, рыболовные снасти минск, оружие для охоты, купить карабин, оптические прицелы, спиннинги, катушки, палатки, кемпинг беларусь">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ловим, но не пойманы">
+    <meta name="copyright" content="Ловим, но не пойманы">
+    <meta name="revisit-after" content="1 days">
+
+    <!-- Гео-теги для Минска и Беларуси -->
+    <meta name="geo.region" content="BY-MI">
+    <meta name="geo.placename" content="Minsk">
+    <meta name="geo.position" content="53.9045;27.5615">
+    <meta name="ICBM" content="53.9045, 27.5615">
+
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Ловим, но не пойманы | Охота и рыбалка в Минске">
+    <meta property="og:description"
+        content="Снаряжение, оружие, рыболовные снасти. Скидки до 25%! Оригинальные бренды. Доставка по Беларуси.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://lovim.by/">
+    <meta property="og:site_name" content="Ловим, но не пойманы">
+
+    <!-- Canonical ссылка -->
+    <link rel="canonical" href="https://lovim.by/">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎣</text></svg>">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+
+    <!-- Микроразметка Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Ловим, но не пойманы",
+      "description": "Магазин охоты и рыбалки в Минске. Профессиональное снаряжение, оружие, оптика, рыболовные снасти, одежда, кемпинг.",
+      "image": "https://lovim.by/logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Чюрлёниса, 1",
+        "addressLocality": "Минск",
+        "addressRegion": "Минская область",
+        "addressCountry": "BY"
+      },
+      "telephone": "+375291234567",
+      "email": "info@lovim.by",
+      "openingHours": "Mo-Su 10:00-20:00",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "20:00"
+        }
+      ],
+      "priceRange": "$$",
+      "hasMap": "https://yandex.by/maps/-/CDXfQ~5P",
+      "sameAs": [
+        "https://www.instagram.com/lovim_by/",
+        "https://vk.com/lovim_official"
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9F7F3;
+            color: #1E2A2E;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Обновлённый header с SEO-ссылками */
+        header {
+            background: #0F2C2C;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #E8B86B;
+        }
+
+        .logo small {
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: normal;
+            color: #a8c0b0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #f0ede8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: #E8B86B;
+        }
+
+        .btn-outline-light {
+            border: 1px solid #E8B86B;
+            padding: 6px 16px;
+            border-radius: 30px;
+            background: transparent;
+            color: #E8B86B;
+            font-weight: 600;
+            transition: 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-outline-light:hover {
+            background: #E8B86B;
+            color: #0F2C2C;
+        }
+
+        /* hero section */
+        .hero {
+            background: linear-gradient(105deg, #162b2b 0%, #1f3e3e 100%);
+            color: white;
+            padding: 70px 0 80px;
+        }
+
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .hero-text {
+            flex: 1.2;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 550px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #E8B86B;
+            color: #1E2A2E;
+            padding: 12px 30px;
+            border-radius: 40px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary:hover {
+            background: #cf9f55;
+            transform: scale(1.02);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid #E8B86B;
+            padding: 12px 30px;
+            border-radius: 40px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: #E8B86B;
+            color: #0F2C2C;
+        }
+
+        .hero-stats {
+            flex: 0.8;
+            background: rgba(255, 255, 240, 0.05);
+            backdrop-filter: blur(4px);
+            border-radius: 32px;
+            padding: 28px;
+            text-align: center;
+        }
+
+        /* рекламный баннер */
+        .ad-banner {
+            background: #2C4A3E;
+            margin: 40px 0 20px;
+            border-radius: 28px;
+            overflow: hidden;
+        }
+
+        .ad-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 32px;
+            background: linear-gradient(95deg, #2C4A3E, #3A5C4A);
+        }
+
+        .ad-text h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #FFE2B5;
+        }
+
+        .ad-text p {
+            color: #e0e0d6;
+        }
+
+        .ad-btn {
+            background: #E8B86B;
+            padding: 10px 28px;
+            border-radius: 40px;
+            font-weight: bold;
+            color: #1E2A2E;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .ad-btn:hover {
+            background: #f7c27a;
+            transform: scale(1.02);
+        }
+
+        /* секции */
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 48px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #E8B86B;
+            margin-top: 10px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+        }
+
+        .product-card,
+        .service-card {
+            background: white;
+            border-radius: 24px;
+            padding: 24px 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: 0.25s;
+            text-align: center;
+            border: 1px solid #ece4d7;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .product-card:hover,
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-icon {
+            font-size: 2.8rem;
+            color: #2C4A3E;
+            margin-bottom: 16px;
+        }
+
+        .product-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .product-card p,
+        .service-card p {
+            flex: 1;
+            margin-bottom: 16px;
+        }
+
+        .btn-card {
+            margin-top: auto;
+            background: #0F2C2C;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            align-self: center;
+            min-width: 140px;
+        }
+
+        .btn-card:hover {
+            background: #E8B86B;
+            color: #0F2C2C;
+        }
+
+        /* SEO-текстовый блок */
+        .seo-block {
+            background: #F3EFE6;
+            border-radius: 32px;
+            padding: 48px 40px;
+            margin: 40px 0;
+        }
+
+        .seo-block h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #0F2C2C;
+        }
+
+        .seo-block p {
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        /* маркетинг/акции */
+        .offers-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: space-between;
+        }
+
+        .offer-item {
+            background: #F3EFE6;
+            flex: 1;
+            border-radius: 24px;
+            padding: 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .offer-item p {
+            flex: 1;
+            margin-bottom: 16px;
+        }
+
+        .offer-item .btn-card {
+            margin-top: auto;
+        }
+
+        /* footer */
+        footer {
+            background: #0F2C2C;
+            color: #ccc;
+            padding: 48px 0 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin: 8px 0;
+        }
+
+        .footer-links a:hover {
+            color: #E8B86B;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #2c4949;
+            padding-top: 24px;
+            font-size: 0.85rem;
+        }
+
+        button,
+        .btn-card,
+        .ad-btn {
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-grid {
+                flex-direction: column;
+            }
+
+            .seo-block {
+                padding: 30px 24px;
+            }
+
+            .seo-block h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Стили для карты */
+        .map-container {
+            margin-top: 24px;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><a href="/">Ловим, но не пойманы<span>.</span><small>by</small></a></div>
+                <ul class="nav-links">
+                    <li><a href="/catalog/">Каталог</a></li>
+                    <li><a href="/services/">Услуги</a></li>
+                    <li><a href="/about/">О нас</a></li>
+                    <li><a href="/contacts/">Контакты</a></li>
+                    <li><a href="/blog/">Блог</a></li>
+                </ul>
+                <div>
+                    <a href="#" class="btn-outline-light" id="cartDemoBtn"><i class="fas fa-store"></i> Магазин</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <div class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1>Снаряжение для истинных охотников и рыбаков в Минске</h1>
+                        <p>Лучшие товары для активного отдыха, кемпинга и трофейной рыбалки в Беларуси. Профессиональный
+                            сервис и экспертная поддержка. Оригинальные бренды, гарантия качества.</p>
+                        <div class="hero-buttons">
+                            <a href="/catalog/" class="btn-primary"><i class="fas fa-gun"></i> В каталог</a>
+                            <a href="/services/rent/" class="btn-secondary"><i class="fas fa-fish"></i> Аренда
+                                снаряжения</a>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <i class="fas fa-tree" style="font-size: 2rem; color: #E8B86B;"></i>
+                        <p><strong>1200+</strong> довольных клиентов</p>
+                        <p><strong>50+</strong> брендов</p>
+                        <p><strong>24/7</strong> онлайн-консультации</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рекламное место #1 (акция сезона) -->
+        <div class="container">
+            <div class="ad-banner">
+                <div class="ad-content">
+                    <div class="ad-text">
+                        <h3><i class="fas fa-tags"></i> Охотничий сезон 2026!</h3>
+                        <p>Скидка до 25% на оптику, палатки и зимнюю одежду. Успейте подготовиться к сезону!</p>
+                    </div>
+                    <a href="/promotions/" class="ad-btn" id="promoBtn">Забрать скидку →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Продуктовый ассортимент / Каталог -->
+        <section id="catalog">
+            <div class="container">
+                <h2 class="section-title">Каталог товаров для охоты и рыбалки</h2>
+                <div class="card-grid">
+                    <div class="product-card">
+                        <div class="product-icon"><i class="fas fa-gun"></i></div>
+                        <h3>Оружие и оптика</h3>
+                        <p>Огнестрельное и пневматическое оружие, арбалеты, оптические прицелы, тепловизоры, ночные
+                            прицелы.</p>
+                        <button class="btn-card" data-product="Оружие">Подробнее</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon"><i class="fas fa-fish"></i></div>
+                        <h3>Рыболовные снасти</h3>
+                        <p>Спиннинги, удочки, катушки Shimano и Daiwa, приманки, эхолоты Garmin – всё для трофейной
+                            ловли.</p>
+                        <button class="btn-card" data-product="Снасти">Выбрать снасти</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon"><i class="fas fa-vest"></i></div>
+                        <h3>Одежда и обувь</h3>
+                        <p>Камуфляж Realtree, Mossy Oak, термобелье, непромокаемые костюмы, сапоги EVA, охотничьи
+                            куртки.</p>
+                        <button class="btn-card" data-product="Одежда">Посмотреть</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon"><i class="fas fa-campground"></i></div>
+                        <h3>Кемпинг и туризм</h3>
+                        <p>Палатки, спальники, рюкзаки, газовые горелки, термосы, фонари, туристическая мебель.</p>
+                        <button class="btn-card" data-product="Кемпинг">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO-текстовый блок (уникальный контент для продвижения) -->
+        <div class="container">
+            <div class="seo-block">
+                <h3>Магазин охоты и рыбалки «Ловим, но не пойманы» в Минске</h3>
+                <p>Мы предлагаем широкий ассортимент профессионального снаряжения для охоты, рыбалки и активного отдыха
+                    в Беларуси. В нашем каталоге представлены только оригинальные товары от ведущих мировых
+                    производителей: <strong>карабины Bergara и Tikka</strong>, оптические прицелы
+                    <strong>Leupold</strong>, рыболовные катушки <strong>Shimano и Daiwa</strong>, эхолоты
+                    <strong>Garmin</strong>, камуфляж <strong>Realtree и Mossy Oak</strong>, палатки
+                    <strong>Nordway</strong> и многое другое.
+                </p>
+                <p>📍 Мы находимся в центре Минска по адресу: <strong>ул. Чюрлёниса, 1</strong>. Режим работы: ежедневно
+                    с <strong>10:00 до 20:00</strong> без выходных. Доставка осуществляется по Минску и всей Беларуси.
+                </p>
+                <p>🔫 <strong>Оружие для охоты</strong> – только легальная продукция с полным пакетом документов.
+                    Поможем с выбором гладкоствольного и нарезного оружия, подберем оптику под ваши задачи.</p>
+                <p>🎣 <strong>Рыболовные снасти</strong> – огромный выбор спиннингов, фидеров, катушек, воблеров,
+                    блесен, силиконовых приманок. Консультации опытных рыболовов помогут собрать идеальный комплект для
+                    ловли щуки, судака, окуня, карпа и сома.</p>
+                <p>🏕️ <strong>Кемпинг и туризм</strong> – всё для комфортного отдыха на природе: палатки на 2-8
+                    человек, спальные мешки для любых температур, рюкзаки, горелки, посуда, термосы, фонари и
+                    навигаторы.</p>
+                <p>Звоните нам по телефону <strong>+375 (29) 123-45-67</strong> или пишите в мессенджеры. Ждём вас в
+                    нашем магазине!</p>
+            </div>
+        </div>
+
+        <!-- дополнительная реклама: баннер между блоками -->
+        <div class="container">
+            <div class="ad-banner" style="background: #1f4037;">
+                <div class="ad-content">
+                    <div class="ad-text">
+                        <h3><i class="fas fa-chalkboard-user"></i> Мастер-классы и обучение</h3>
+                        <p>Основы охоты, рыбалки и безопасности. Выездные семинары от профессионалов с большим стажем!
+                        </p>
+                    </div>
+                    <a href="/services/training/" class="ad-btn" id="masterClassBtn">Записаться →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Услуги и дополнительный сервис -->
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="card-grid">
+                    <div class="service-card">
+                        <i class="fas fa-key" style="font-size: 2.2rem; color:#2C4A3E;"></i>
+                        <h3>Аренда оборудования</h3>
+                        <p>Палатки, лодки, эхолоты, снаряжение – берите в прокат на выходные. Экономьте деньги на
+                            разовых выездах.</p>
+                        <button class="btn-card serviceBtn" data-service="Аренда">Узнать цены</button>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-chalkboard-user" style="font-size: 2.2rem; color:#2C4A3E;"></i>
+                        <h3>Обучение и туры</h3>
+                        <p>Инструктаж для начинающих, организация охотничьих и рыболовных туров по лучшим местам
+                            Беларуси.</p>
+                        <button class="btn-card serviceBtn" data-service="Туры">Подробнее</button>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-wrench" style="font-size: 2.2rem; color:#2C4A3E;"></i>
+                        <h3>Ремонт и настройка</h3>
+                        <p>Тюнинг оружия, обслуживание катушек, чистка и юстировка оптических прицелов.</p>
+                        <button class="btn-card serviceBtn" data-service="Ремонт">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Акции / программы лояльности -->
+        <section id="offers">
+            <div class="container">
+                <h2 class="section-title">Программы лояльности</h2>
+                <div class="offers-grid">
+                    <div class="offer-item">
+                        <i class="fas fa-gem" style="font-size: 2rem; color:#E8B86B;"></i>
+                        <h3>Клуб "Ловим"</h3>
+                        <p>Накопительные скидки до 15%, приоритетное бронирование, персональные предложения и закрытые
+                            распродажи.</p>
+                        <button class="btn-card" id="loyaltyBtn">Активировать карту</button>
+                    </div>
+                    <div class="offer-item">
+                        <i class="fas fa-trophy" style="font-size: 2rem; color:#E8B86B;"></i>
+                        <h3>Сезонные акции</h3>
+                        <p>При покупке от 200 BYN – подарок. Спецпредложения на коллекции весна-лето и осень-зима.</p>
+                        <button class="btn-card" id="seasonBtn">Смотреть акции</button>
+                    </div>
+                    <div class="offer-item">
+                        <i class="fas fa-users" style="font-size: 2rem; color:#E8B86B;"></i>
+                        <h3>Кэшбэк за отзывы</h3>
+                        <p>Оставьте отзыв о товаре и получите 5% бонус на следующий заказ. Честное мнение важно для нас!
+                        </p>
+                        <button class="btn-card" id="reviewBtn">Оставить отзыв</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О нас (миссия и преимущества) -->
+        <section id="about" style="background: #EDE8DF;">
+            <div class="container">
+                <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+                    <div style="flex: 1.4;">
+                        <h2 class="section-title" style="margin-bottom: 20px;">О компании «Ловим, но не пойманы»</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.5; margin-bottom: 20px;">Мы объединяем традиции
+                            охоты и рыбалки с современным сервисом. Работаем в Минске с 2025 года. Предоставляем
+                            качественное снаряжение и экспертизу, чтобы каждый выезд на природу был безопасным,
+                            комфортным и результативным.</p>
+                        <p><strong>✔️ Гарантия подлинности всех товаров</strong><br>
+                            <strong>✔️ Профессиональные консультации охотников и рыболовов</strong><br>
+                            <strong>✔️ Сотрудничество с ведущими мировыми брендами</strong><br>
+                            <strong>✔️ Сервисное обслуживание и ремонт</strong>
+                        </p>
+                        <a href="/about/" class="btn-primary" style="display: inline-block; margin-top: 24px;"
+                            id="aboutBtn">Узнать больше о компании</a>
+                    </div>
+                    <div
+                        style="flex: 0.8; background: #CFC6B3; border-radius: 32px; padding: 30px; text-align: center;">
+                        <i class="fas fa-tree" style="font-size: 3rem; color:#0F2C2C;"></i>
+                        <p style="margin-top: 10px;"><strong>150+</strong> отзывов 5★</p>
+                        <p><strong>Лицензия</strong> на торговлю оружием №12345</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Минск, ул. Чюрлёниса, 1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты и обратная связь с картой -->
+        <section id="contacts">
+            <div class="container">
+                <h2 class="section-title">Контакты магазина в Минске</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+                    <div style="flex: 1;">
+                        <p><i class="fas fa-phone-alt"></i> <strong>Телефон:</strong> <a href="tel:+375291234567"
+                                style="color: #0F2C2C; text-decoration: none;">+375 (29) 123-45-67</a> (Viber, Telegram,
+                            WhatsApp)</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@lovim.by"
+                                style="color: #0F2C2C;">info@lovim.by</a></p>
+                        <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="#"
+                                style="color: #0F2C2C;">@lovim_by</a></p>
+                        <p><i class="fab fa-vk"></i> <strong>Вконтакте:</strong> <a href="#"
+                                style="color: #0F2C2C;">lovim_official</a></p>
+                        <p><i class="fab fa-telegram"></i> <strong>Telegram:</strong> <a href="#"
+                                style="color: #0F2C2C;">@lovim_bot</a></p>
+                        <p>📍 <strong>Адрес головного магазина:</strong> г. Минск, ул. Чюрлёниса, д. 1</p>
+                        <p>🕒 <strong>Режим работы:</strong> ПН-ВС 10:00 – 20:00, без выходных</p>
+
+                        <!-- Карта проезда -->
+                        <div class="map-container">
+                            <iframe
+                                src="https://yandex.by/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j&source=constructor"
+                                height="250" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div style="flex: 1;">
+                        <div
+                            style="background: #FFFFFF; border-radius: 28px; padding: 24px; box-shadow: 0 6px 14px rgba(0,0,0,0.05);">
+                            <h3>Быстрый вопрос</h3>
+                            <input type="text" id="feedbackName" placeholder="Ваше имя"
+                                style="width:100%; padding:12px; margin:10px 0; border-radius: 40px; border:1px solid #ccc;">
+                            <input type="tel" id="feedbackPhone" placeholder="Ваш телефон"
+                                style="width:100%; padding:12px; margin:10px 0; border-radius: 40px; border:1px solid #ccc;">
+                            <textarea id="feedbackMsg" placeholder="Сообщение..." rows="3"
+                                style="width:100%; padding:12px; margin:10px 0; border-radius: 20px; border:1px solid #ccc; font-family: inherit;"></textarea>
+                            <button class="btn-primary" id="sendFeedbackBtn" style="width:100%;">Отправить</button>
+                            <p class="small-note" style="font-size: 0.7rem; margin-top: 12px; text-align: center;">
+                                Нажимая кнопку, вы соглашаетесь с политикой обработки данных</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Ловим, но не пойманы</h3>
+                    <p>Магазин для охотников, рыбаков и туристов. Лучший сервис и качество с 2025 года.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Каталог</h4>
+                    <a href="/catalog/weapons/">Оружие и оптика</a>
+                    <a href="/catalog/fishing/">Рыболовные снасти</a>
+                    <a href="/catalog/clothing/">Одежда и обувь</a>
+                    <a href="/catalog/camping/">Кемпинг и туризм</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Клиентам</h4>
+                    <a href="/delivery/">Доставка по Минску и РБ</a>
+                    <a href="/guarantee/">Гарантия и возврат</a>
+                    <a href="/loyalty/">Программа лояльности</a>
+                    <a href="/services/training/">Мастер-классы</a>
+                </div>
+                <div class="footer-links">
+                    <h4>О компании</h4>
+                    <a href="/about/">О нас</a>
+                    <a href="/blog/">Блог и статьи</a>
+                    <a href="/reviews/">Отзывы клиентов</a>
+                    <a href="/contacts/">Контакты</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Ловим, но не пойманы — официальный магазин товаров для охоты и рыбалки в Минске. Все права
+                    защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Улучшенный обработчик событий с аналитикой
+        function sendAnalytics(action, category, label) {
+            console.log(`Аналитика: ${action} - ${category} - ${label}`);
+            // Здесь можно подключить Яндекс.Метрику или Google Analytics
+        }
+
+        const buttons = document.querySelectorAll('.btn-card, .ad-btn, .btn-primary, .btn-secondary, .btn-outline-light');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Аналитика клика
+                sendAnalytics('click', btn.tagName, btn.id || btn.innerText);
+
+                if (btn.id === 'sendFeedbackBtn') {
+                    const name = document.getElementById('feedbackName')?.value;
+                    const phone = document.getElementById('feedbackPhone')?.value;
+                    const msg = document.getElementById('feedbackMsg')?.value;
+                    if (name && (phone || msg)) {
+                        alert(`Спасибо, ${name}! Ваше сообщение принято. Мы свяжемся с вами по телефону ${phone || 'указанному'} в ближайшее время.`);
+                        document.getElementById('feedbackName').value = '';
+                        document.getElementById('feedbackPhone').value = '';
+                        document.getElementById('feedbackMsg').value = '';
+                        sendAnalytics('form_submit', 'feedback', name);
+                    } else {
+                        alert('Пожалуйста, заполните имя и телефон или сообщение.');
+                    }
+                    return;
+                }
+                if (btn.id === 'loyaltyBtn') alert('🌟 Добро пожаловать в клуб "Ловим"! Ваша карта активирована. Скидки до 15% ждут вас.');
+                else if (btn.id === 'seasonBtn') alert('🎣 Акции сезона: скидка 20% на зимние снасти, бонусные товары при покупке от 150 BYN.');
+                else if (btn.id === 'reviewBtn') alert('✍️ Спасибо! Перейдите по ссылке в нашем Telegram, чтобы оставить отзыв и получить 5% кэшбэк.');
+                else if (btn.id === 'masterClassBtn') alert('🏕️ Мастер-классы: каждую субботу в нашем магазине. Запись по тел. +375291234567');
+                else if (btn.id === 'promoBtn') alert('🏷️ Промокод LOVIM2026 активирован! Скидка 25% на оптику и палатки до 20 мая.');
+                else if (btn.id === 'cartDemoBtn') alert('🛒 Интернет-магазин скоро откроется! Следите за новостями.');
+                else if (btn.id === 'aboutBtn') alert('Компания "Ловим, но не пойманы": официальный дилер брендов, член Белорусской ассоциации охотников. Работаем в Минске с 2025 года.');
+                else if (btn.classList.contains('serviceBtn')) {
+                    const service = btn.getAttribute('data-service') || 'услуга';
+                    alert(`✅ Услуга "${service}" доступна для заказа. Менеджер свяжется с вами для уточнения деталей.`);
+                } else {
+                    const product = btn.getAttribute('data-product');
+                    if (product) alert(`🔧 Товар "${product}" добавлен в корзину (демо-режим). Оформление заказа скоро появится!`);
+                    else alert('Функционал в разработке. Свяжитесь с нами для оформления заказа!');
+                }
+            });
+        });
+
+        // Добавляем обработку enter для формы
+        document.querySelectorAll('#feedbackName, #feedbackPhone, #feedbackMsg').forEach(input => {
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    document.getElementById('sendFeedbackBtn').click();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
